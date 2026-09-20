@@ -74,6 +74,6 @@ The `/backend` folder is ready to run as a native service on **Render**:
 2. Link your repository.
 3. Configure the parameters in the dashboard:
    - **Root Directory**: `backend`
-   - **Build Command**: `npm install`
+   - **Build Command**: `npm install && npm run build`
    - **Start Command**: `npm start`
 4. Add all configuration variables from `backend/.env.example` under the Environment section.

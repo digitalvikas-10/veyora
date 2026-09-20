@@ -4,6 +4,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "build": "node --check index.js",
     "start": "node index.js",
     "dev": "tsx index.js",
     "test": "node scripts/run-integration-tests.js"
