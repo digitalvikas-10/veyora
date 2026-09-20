@@ -2,11 +2,11 @@ import axios from 'axios';
 
 // Determine base API URL safely
 const getBaseURL = () => {
-  const envUrl = import.meta.env.VITE_API_URL;
+  const envUrl = import.meta.env.VITE_API_URL?.replace(/\/$/, '');
   if (!envUrl || envUrl.includes('localhost') || envUrl.includes('127.0.0.1')) {
     return '/api/v1';
   }
-  return envUrl;
+  return envUrl.endsWith('/api/v1') ? envUrl : `${envUrl}/api/v1`;
 };
 
 /**
