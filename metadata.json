@@ -1,0 +1,6 @@
+{
+  "name": "VEYORA",
+  "description": "Multi-tenant client operations SaaS platform for freelancers, agencies, and small service businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
